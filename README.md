@@ -42,7 +42,7 @@ docker-compose up
 Perform a curl to any of the above endpoints:
 i.e. `curl -i "localhost:8080/v1/payments"`
 
-## 7. How to run the tests
+## 5. How to run the tests
 ### Running unit tests
 ```
 go test -v ./...
