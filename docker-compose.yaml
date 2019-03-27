@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  app:
+    image: payment-app
+    links:
+      - mongo
+    environment:
+      - MONGO_URI=mongo:27017
+    container_name: "payment_app"
+    ports:
+        - "8080:8080"    
+  mongo:
+    image: "mongo:latest"
+    ports:
+      - "27017:27017"
